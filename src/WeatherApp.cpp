@@ -11,7 +11,7 @@
 #include <ctime>
 
 WeatherApp::WeatherApp() {
-    omfl::OmflConfiguration config("../resources/config.omfl");
+    omfl::OmflConfiguration config("resources/config.omfl");
     for (int i = 0; i < INT16_MAX; ++i) {
         omfl::Element cur = config.Get("main.cities")[i];
         if (!cur.IsString()) {

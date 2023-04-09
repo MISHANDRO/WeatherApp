@@ -116,6 +116,10 @@ std::string WeatherInfo::GetColorTemperature(short val, const ColorMode& mode) {
         res += (mode == Prefix) ? "&<" : "red";
     }
 
+    if (val > 0) {
+        res += '+';
+    }
+
     if (mode == HTML) {
         return res + "\">" + std::to_string(val) + "</span>";
     }

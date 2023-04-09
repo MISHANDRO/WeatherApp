@@ -1,9 +1,9 @@
-[ru]
+[russian]
 time_parts = ["Утро", "День", "Вечер", "Ночь"]
 weekday_names = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"]
 month_names = ["Янв", "Фев", "Мар", "Апр", "Май", "Июнь", "Июль", "Авг", "Сен", "Окт", "Ноя", "Дек"]
 
-weather_names = ["Clear Sky", "Mainly clear", "Облачно", "Overcast", "Fog", "Fog",  "Drizzle", "Drizzle", "Drizzle",  "Freezing", "Freezing",  "Rain", "Rain", "Rain",  "Freezing rain", "Freezing rain",  "Snow", "Snow", "Snow", "Snow",  "Rain", "Rain", "Rain",  "Snow", "Snow",  "Thunderstorm", "Thunderstorm", "Thunderstorm"]
+weather_names = ["Солнечно", "Довольно ясно", "Облачно", "Пасмурно", "Туман", "Туман",  "Легкая морось", "Морось", "Сильная морось",  "Моросящий дождь", "Моросящий дождь",  "Слабый дождь", "Дождь", "Сильный дождь",  "Ледяной дождь", "Ледяной дождь",  "Легкий снег", "Снег", "Сильный снегопад", "Крупный снег",  "Небольшой ливень", "Ливень", "Ливень",  "Небольшой снегопад", "Снегопад",  "Гроза", "Гроза с градом", "Гроза с градом"]
 
 wait = "Выполняется запрос. Пожалуйста, &6ожидайте...&7"
 header = "Прогноз погоды в городе: &2%s&7"
@@ -26,45 +26,165 @@ font_family = "default"
 especially = false
 
 
-[en]
+[english]
 time_parts = ["Morning", "Day", "Evening", "Night"]
-weekday_names = ["Sun", "Mon", "Tue", "Wed", "Th", "Fri", "Sat"]
-month_names = ["Jan", "Feb", "Mar", "April", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+weekday_names = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+month_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-wait = "Пожалуйста жди!!!!1"
-header = "Прогноз погоды:"
+weather_names = ["Sunny", "Partly cloudy", "Cloudy", "Overcast", "Fog", "Mist", "Light drizzle", "Drizzle", "Heavy drizzle", "Light rain", "Moderate rain", "Light rain", "Rain", "Heavy rain", "Freezing rain", "Freezing rain", "Light snow", "Snow", "Heavy snowfall", "Sleet", "Light showers", "Showers", "Showers", "Light snowfall", "Snowfall", "Thunderstorm", "Hailstorm", "Thunderstorm with hail"]
 
-max_days = "Нельзя больше 16 дней"
-error_weather = "Произошла ошибка при получения прогноза погоды для города"
-error_city = "Город не найден"
-update_error_info = "*отображена информация, полученная ранее"
-error_network = "Отсутвует подключение к интернету"
+wait = "Request is in progress. &6Please wait...&7"
+header = "Weather forecast in the city: &2%s&7"
+
+input = "&:Enter&7 city name: "
+
+max_days = "Cannot display more than &4%d&7 days!"
+error_weather = "An &4error&7 occurred while retrieving weather forecast for the city.
+Please try again later or reload using &4Shift + A&7"
+
+error_city = "City &4%s&7 not found :("
+update_error_info = "  *&>displaying previously retrieved information&7"
+error_network = "&4No internet&7 connection :("
 
 wind_speed = "m/s"
-mmHg = "mmHg"
+mmHg = "mm Hg"
+mm = "mm"
+
+
+font_family = "default"
+especially = false
+
+
+[french]
+time_parts = ["Matin", "Journée", "Soirée", "Nuit"]
+weekday_names = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"]
+month_names = ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc"]
+
+weather_names = ["Ensoleillé", "Assez dégagé", "Nuageux", "Couvert", "Brouillard", "Brouillard", "Légère bruine", "Bruine", "Fortes bruines", "Bruine verglaçante", "Bruine verglaçante", "Faibles averses", "Pluie", "Forte pluie", "Pluie verglaçante", "Pluie verglaçante", "Légère neige", "Neige", "Fortes chutes de neige", "Neige fondue", "Petites averses", "Averses", "Averses", "Légères chutes de neige", "Chutes de neige", "Orages", "Orages avec grêle", "Orages avec grêle"]
+
+wait = "Requête en cours. &6Veuillez patienter...&7"
+header = "Prévision météo pour la ville: &2%s&7"
+
+input = "Veuillez entrer le nom de la ville: "
+
+max_days = "Impossible d'afficher plus de %&4%d&7 jours!"
+error_weather = "Une &4erreur&7 s'est produite lors de la récupération de la prévision météo pour la ville. Veuillez réessayer plus tard ou recharger avec &4Shift + A&7."
+
+error_city = "Ville non trouvée: &4%s&7"
+update_error_info = "  *&>affichage des informations précédemment récupérées&7"
+error_network = "Pas de connexion réseau :("
+
+wind_speed = "m/s"
+mmHg = "mm Hg"
 mm = "mm"
 
 font_family = "default"
 especially = false
 
 
-[ch]
+[german]
+time_parts = ["Morgen", "Tag", "Abend", "Nacht"]
+weekday_names = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"]
+month_names = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"]
+
+weather_names = ["Sonnig", "Teilweise bewölkt", "Bewölkt", "Bedeckt", "Nebel", "Nebel", "Leichter Nieselregen", "Nieselregen", "Starker Nieselregen", "Gefrierender Nieselregen", "Gefrierender Nieselregen", "Leichter Schauer", "Regen", "Starker Regen", "Gefrierender Regen", "Gefrierender Regen", "Leichter Schneefall", "Schnee", "Starker Schneefall", "Gefrierender Schneeregen", "Leichter Platzregen", "Platzregen", "Platzregen", "Leichter Schneeschauer", "Schneeschauer", "Gewitter", "Gewitter mit Hagel", "Gewitter mit Hagel"]
+
+wait = "Anfrage wird bearbeitet. &6Bitte warten...&7"
+header = "Wettervorhersage für die Stadt: &2%s&7"
+
+input = "Bitte geben Sie den Stadtnamen ein: "
+
+max_days = "Es können nicht mehr als &4%d&7 Tage angezeigt werden!"
+error_weather = "Ein &4Fehler&7 ist bei der Wettervorhersage für die Stadt aufgetreten. Bitte versuchen Sie es später erneut oder laden Sie mit &4Shift + A&7 neu."
+
+error_city = "Stadt nicht gefunden: &4%s&7"
+update_error_info = "  *&>Anzeige zuvor abgerufener Informationen&7"
+error_network = "Keine Netzwerkverbindung :("
+
+wind_speed = "m/s"
+mmHg = "mm Hg"
+mm = "mm"
+
+font_family = "default"
+especially = false
+
+[spanish]
+time_parts = ["Mañana", "Día", "Tarde", "Noche"]
+weekday_names = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"]
+month_names = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+
+weather_names = ["Soleado", "Parcial. nublado", "Nublado", "Cubierto", "Niebla", "Niebla", "Llovizna ligera", "Llovizna", "Llovizna fuerte", "Lluvia helada", "Lluvia helada", "Chubasco ligero", "Lluvia", "Chubasco fuerte", "Lluvia congelada", "Lluvia congelada", "Nieve ligera", "Nieve", "Fuerte nevada", "Aguanieve", "Chubasco de lluvia ligera", "Chubasco de lluvia", "Chubasco de lluvia", "Chubasco de nieve ligero", "Chubasco de nieve", "Tormenta", "Tormenta con granizo", "Tormenta con granizo"]
+
+wait = "Se está procesando la solicitud. &6Por favor, espera...&7"
+header = "Pronóstico del tiempo para la ciudad: &2%s&"
+
+input = "Por favor, ingrese el nombre de la ciudad: "
+
+max_days = "¡No se pueden mostrar más de &4%d&7 días!"
+error_weather = "Se produjo un &4error&7 al obtener el pronóstico del tiempo para la ciudad. Por favor, inténtalo de nuevo más tarde o recarga con &4Shift + A&7."
+
+error_city = "Ciudad no encontrada: &4%s&7"
+update_error_info = "  *&>Mostrando información previamente obtenida&7"
+error_network = "¡Sin conexión a internet! :("
+
+wind_speed = "m/s"
+mmHg = "mm Hg"
+mm = "mm"
+
+font_family = "default"
+especially = false
+
+
+[italian]
+time_parts = ["Mattina", "Giorno", "Pomeriggio", "Notte"]
+weekday_names = ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"]
+month_names = ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"]
+
+weather_names = ["Soleggiato", "Parzial. nuvoloso", "Nuvoloso", "Coperto", "Nebbia", "Nebbia", "Piog. leggera", "Pioggerella", "Pioggia forte", "Pioggia gelata", "Pioggia gelata", "Rovescio leggero", "Pioggia", "Rovescio forte", "Pioggia ghiacciata", "Pioggia ghiacciata", "Neve leggera", "Neve", "Forti nevicate", "Nevischio", "Breve rovescio di pioggia", "Rovescio di pioggia", "Rovescio di pioggia", "Breve rovescio di neve", "Rovescio di neve", "Temporale", "Temporale con grandine", "Temporale con grandine"]
+
+wait = "La richiesta è in corso. &6Per favore, attendi...&7"
+header = "Previsioni del tempo per la città: &2%s&7"
+
+input = "&6Per favore&7, inserisci il nome della città: "
+
+max_days = "Non è possibile visualizzare più di &4%d&7 giorni!"
+error_weather = "Si è verificato un &4errore&7 durante il recupero delle previsioni del tempo per la città. Per favore, riprova più tardi o ricarica con &4Shift + A&7."
+
+error_city = "Città non trovata: &4%s&7"
+update_error_info = "  *&>Mostrando informazioni ottenute in precedenza&7"
+error_network = "Connessione a Internet assente! :("
+
+wind_speed = "m/s"
+mmHg = "mm Hg"
+mm = "mm"
+
+font_family = "default"
+especially = false
+
+
+[chinese]
 time_parts = ["早上好", "日", "晚上", "夜"]
-weekday_names = ["Вс", "Пн", "Вт", "Ср", "Чт", "星期五", "Сб"]
-month_names = ["Янв", "Фев", "Мар", "四月", "Май", "Июнь", "Июль", "Авг", "Сен", "Окт", "Ноя", "Дек"]
+weekday_names = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]
+month_names = ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"]
 
-wait = "Пожалуйста жди!!!!1"
-header = "Прогноз погоды:"
+weather_names = ["晴天", "部分多云", "多云", "阴天", "雾", "薄雾", "轻微细雨", "细雨", "大雨细雨", "小雨", "小雨", "小阵雨", "雨", "大雨", "冻雨", "冻雨", "小雪", "雪", "大雪", "雨夹雪", "小阵雨", "阵雨", "阵雨", "小雪", "降雪", "雷暴", "冰雹", "带冰雹的雷暴"]
 
-max_days = "Нельзя больше 16 дней"
-error_weather = "Произошла ошибка при получения прогноза погоды для города"
-error_city = "Город не найден"
-update_error_info = "*отображена информация, полученная ранее"
-error_network = "Отсутвует подключение к интернету"
+wait = "请求进行中，&6请稍候...&7"
+header = "城市天气预报： &2%s&7"
+
+input = "请输入城市名称："
+
+max_days = "无法显示超过 &4%d&7 天的天气预报！"
+error_weather = "获取城市天气预报时出现 &4错误&7。请稍后重试或使用 &4Shift + A&7 重新加载。"
+
+error_city = "未找到城市： &4%s&7"
+update_error_info = "  *&>显示之前获取到的信息&7"
+error_network = "无网络连接 :("
 
 wind_speed = "米/秒"
-mmHg = "mmHg"
+mmHg = "毫米汞柱"
 mm = "毫米"
+
 
 font_family = "MingLiU"
 especially = true

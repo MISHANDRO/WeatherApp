@@ -8,5 +8,5 @@ default_days = 3
 max_days = 7
 
 [extra]
-language = "ru"
+language = "russian"
 font_size = 16

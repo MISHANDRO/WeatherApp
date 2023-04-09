@@ -30,7 +30,7 @@ size_t ColorStr::size() const {
     size_t res = u32str.size() - std::count(u32str.begin(), u32str.end(), '&') * 2;
     if (especially) {
         for (const char32_t &ch: u32str) {
-            if (converter.to_bytes(ch).size() >= 3) {
+            if (converter.to_bytes(ch).size() >= 3 && std::iswalpha(ch)) {
                 ++res;
             }
         }

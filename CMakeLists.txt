@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(labwork_10_MISHANDRO)
+project(WeatherApp)
 
 set(CMAKE_CXX_STANDARD 23)
 
@@ -23,15 +23,18 @@ include_directories(WeatherManager)
 include_directories(labwork-6-MISHANDRO/lib)
 add_subdirectory(labwork-6-MISHANDRO/lib)
 
-add_executable(labwork_10_MISHANDRO main.cpp
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/resources/config.omfl ${CMAKE_CURRENT_SOURCE_DIR}/resources/languages.omfl
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/resources)
+
+add_executable(WeatherApp main.cpp
         include/ColorStr.h               src/ColorStr.cpp
         include/DayTable.h               src/DayTable.cpp
         include/Pictures.h               src/Pictures.cpp
         include/Messages.h               src/Messages.cpp
         include/WeatherApp.h             src/WeatherApp.cpp
         include/Page.h                   src/Page.cpp
-        WeatherManager/Day.h WeatherManager/Day.cpp
 
+        WeatherManager/Day.h             WeatherManager/Day.cpp
         WeatherManager/WeatherManager.h  WeatherManager/WeatherManager.cpp
         WeatherManager/WeatherInfo.h     WeatherManager/WeatherInfo.cpp
 
@@ -39,5 +42,5 @@ add_executable(labwork_10_MISHANDRO main.cpp
         labwork-6-MISHANDRO/lib/parser.h labwork-6-MISHANDRO/lib/parser.cpp
         )
 
-target_link_libraries(labwork_10_MISHANDRO PRIVATE cpr::cpr)
-target_link_libraries(labwork_10_MISHANDRO PRIVATE nlohmann_json::nlohmann_json)
+target_link_libraries(WeatherApp PRIVATE cpr::cpr)
+target_link_libraries(WeatherApp PRIVATE nlohmann_json::nlohmann_json)

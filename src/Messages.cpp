@@ -22,7 +22,7 @@ bool replace(ColorStr& str, const std::string& from, const std::string& to) {
 
 
 void Messages::Init(const std::string& language) {
-    omfl::OmflConfiguration config("../resources/languages.omfl");
+    omfl::OmflConfiguration config("resources/languages.omfl");
     const omfl::Element& section = config.Get(language);
 
     std::vector<std::string> time_parts;
