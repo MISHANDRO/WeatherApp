@@ -18,14 +18,26 @@ FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download
 FetchContent_MakeAvailable(json)
 
 include_directories(include)
+include_directories(WeatherManager)
+
+include_directories(labwork-6-MISHANDRO/lib)
+add_subdirectory(labwork-6-MISHANDRO/lib)
 
 add_executable(labwork_10_MISHANDRO main.cpp
-        include/DayTable.h
-        include/Pictures.h
-        include/WeatherManager.h
-        include/WeatherApp.h
-        include/Page.h
-        include/Day.h)
+        include/ColorStr.h               src/ColorStr.cpp
+        include/DayTable.h               src/DayTable.cpp
+        include/Pictures.h               src/Pictures.cpp
+        include/Messages.h               src/Messages.cpp
+        include/WeatherApp.h             src/WeatherApp.cpp
+        include/Page.h                   src/Page.cpp
+        WeatherManager/Day.h WeatherManager/Day.cpp
+
+        WeatherManager/WeatherManager.h  WeatherManager/WeatherManager.cpp
+        WeatherManager/WeatherInfo.h     WeatherManager/WeatherInfo.cpp
+
+        labwork-6-MISHANDRO/lib/Element.h labwork-6-MISHANDRO/lib/Element.cpp
+        labwork-6-MISHANDRO/lib/parser.h labwork-6-MISHANDRO/lib/parser.cpp
+        )
 
 target_link_libraries(labwork_10_MISHANDRO PRIVATE cpr::cpr)
 target_link_libraries(labwork_10_MISHANDRO PRIVATE nlohmann_json::nlohmann_json)

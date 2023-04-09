@@ -1,3 +1,10 @@
 [submodule "cpr"]
 	path = cpr
 	url = https://github.com/libcpr/cpr
+[submodule "labwork-6-MISHANDRO"]
+	path = labwork-6-MISHANDRO
+	url = https://github.com/is-itmo-c-22/labwork-6-MISHANDRO
+[submodule "OmflParser"]
+	path = labwork-6-MISHANDRO
+	url = https://github.com/is-itmo-c-22/labwork-6-MISHANDRO
+	branch = deadline_1

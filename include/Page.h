@@ -1,42 +1,32 @@
 #pragma once
 
+#include "Messages.h"
 #include "DayTable.h"
-#include "WeatherManager.h"
-#include "Pictures.h"
+#include "../WeatherManager/WeatherManager.h"
 
 #include <iostream>
 #include <regex>
 
-class Page {
+class Page : public WeatherManager {
 public:
 
-    Page(const std::string& city)
-        : wm_(WeatherManager(city))
-    {
-        wm_.create();
-    }
+    explicit Page(const std::string& city);
+    void Show(bool default_ = true);
 
-    void Show() {
-        std::cout << wm_.city() << std::endl << std::endl;
-        ShowDay();
-    }
+    void ShowDay();
+    void DeleteDay();
 
-    void ShowDay() {
-        wm_.GetDay(cur_index)->Show();
-        ++cur_index;
+    void ShowAllDay();
+    void DeleteAllDay();
 
-        std::cout << std::endl;
-    }
-
-    void clear() {
-        cur_index = 0;
-    }
+    void Update();
+    static void SetDefaultDays(uint16_t val);
 
 private:
 
+    void ClearIterator();
+    void PrintStatus() const;
 
-
-    WeatherManager wm_;
-
-    uint16_t cur_index = 0;
+    std::list<Day>::const_iterator cur_index;
+    static inline uint16_t default_days_ = 3;
 };

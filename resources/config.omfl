@@ -1,0 +1,12 @@
+[main]
+cities = ["Moscow"]
+
+# in seconds
+frequency = 120
+
+default_days = 3
+max_days = 7
+
+[extra]
+language = "ru"
+font_size = 16

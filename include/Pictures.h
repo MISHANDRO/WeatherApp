@@ -4,44 +4,40 @@
 #include <string>
 #include <unordered_map>
 
-const std::unordered_map<int, std::vector<std::string>> Pictures = {
-        {0,  {
+class Pictures {
+public:
+
+    static const std::vector<std::string>& get(int n);
+
+    static const inline std::vector<std::string> clouds = {
             "           ",
-            "&1    .--.   &7",
-            "&1 .-(    ). &7",
-            "&1(___.__)__)&7",
+            "&?    .--.   &7",
+            "&? .-(    ). &7",
+            "&?(___.__)__)&7",
             "           "
-        }},
+    };
 
-};
+    static const inline std::vector<std::string> sun = {
+            "&6   \\__|/   &7",
+            "&6  (     )  &7",
+            "&6-(       )-&7",
+            "&6  (_____)  &7",
+            "&6  /  |  \\  &7",
+    };
 
-const std::unordered_map<int, std::string> WeatherNames = {
-        {0,  "Clear Sky"},
-        {1,  "Mainly clear"},
-        {2,  "partly cloudy"},
-        {3,  "Overcast"},
-        {45,  "Clear Sky"},
-        {48,  "Clear Sky"},
-        {51,  "Clear Sky"},
-        {53,  "Clear Sky"},
-        {55,  "Clear Sky"},
-        {56,  "Clear Sky"},
-        {57,  "Clear Sky"},
-        {61,  "Clear Sky"},
-        {63,  "Clear Sky"},
-        {65,  "Clear Sky"},
-        {66,  "Clear Sky"},
-        {67,  "Clear Sky"},
-        {71,  "Clear Sky"},
-        {73,  "Clear Sky"},
-        {75,  "Clear Sky"},
-        {77,  "Clear Sky"},
-        {80,  "Clear Sky"},
-        {81,  "Clear Sky"},
-        {82,  "Clear Sky"},
-        {85,  "Clear Sky"},
-        {86,  "Clear Sky"},
-        {95,  "Clear Sky"},
-        {96,  "Clear Sky"},
-        {99,  "Clear Sky"},
+    static const inline std::vector<std::string> snow = {
+            "&?   .-.  &7",
+            "&?  (   ).&7",
+            "&? (___() &7",
+            "&9 * * * *&7",
+            "&9* * * * &7",
+    };
+
+    static const inline std::vector<std::string> rain = {
+            "&?   .-.  &7",
+            "&?  (   ).&7",
+            "&? (___() &7",
+            "&9 / / / /&7",
+            "&9/ / / / &7",
+    };
 };

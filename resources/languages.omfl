@@ -1,0 +1,70 @@
+[ru]
+time_parts = ["Утро", "День", "Вечер", "Ночь"]
+weekday_names = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"]
+month_names = ["Янв", "Фев", "Мар", "Апр", "Май", "Июнь", "Июль", "Авг", "Сен", "Окт", "Ноя", "Дек"]
+
+weather_names = ["Clear Sky", "Mainly clear", "Облачно", "Overcast", "Fog", "Fog",  "Drizzle", "Drizzle", "Drizzle",  "Freezing", "Freezing",  "Rain", "Rain", "Rain",  "Freezing rain", "Freezing rain",  "Snow", "Snow", "Snow", "Snow",  "Rain", "Rain", "Rain",  "Snow", "Snow",  "Thunderstorm", "Thunderstorm", "Thunderstorm"]
+
+wait = "Выполняется запрос. Пожалуйста, &6ожидайте...&7"
+header = "Прогноз погоды в городе: &2%s&7"
+
+input = "&:Введите&7 названия города: "
+
+max_days = "Нельзя вывести больше &4%d&7 дней!"
+error_weather = "Произошла &4ошибка&7 при получения прогноза погоды для города.
+Попробуйте позже или перезагрузите при помощи &4Shift + A&7"
+
+error_city = "Город &4%s&7 не найден :("
+update_error_info = "  *&>отображена информация, полученная ранее&7"
+error_network = "&4Отсутвует&7 подключение к интернету :("
+
+wind_speed = "м/с"
+mmHg = "мм рт.ст."
+mm = "мм"
+
+font_family = "default"
+especially = false
+
+
+[en]
+time_parts = ["Morning", "Day", "Evening", "Night"]
+weekday_names = ["Sun", "Mon", "Tue", "Wed", "Th", "Fri", "Sat"]
+month_names = ["Jan", "Feb", "Mar", "April", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+wait = "Пожалуйста жди!!!!1"
+header = "Прогноз погоды:"
+
+max_days = "Нельзя больше 16 дней"
+error_weather = "Произошла ошибка при получения прогноза погоды для города"
+error_city = "Город не найден"
+update_error_info = "*отображена информация, полученная ранее"
+error_network = "Отсутвует подключение к интернету"
+
+wind_speed = "m/s"
+mmHg = "mmHg"
+mm = "mm"
+
+font_family = "default"
+especially = false
+
+
+[ch]
+time_parts = ["早上好", "日", "晚上", "夜"]
+weekday_names = ["Вс", "Пн", "Вт", "Ср", "Чт", "星期五", "Сб"]
+month_names = ["Янв", "Фев", "Мар", "四月", "Май", "Июнь", "Июль", "Авг", "Сен", "Окт", "Ноя", "Дек"]
+
+wait = "Пожалуйста жди!!!!1"
+header = "Прогноз погоды:"
+
+max_days = "Нельзя больше 16 дней"
+error_weather = "Произошла ошибка при получения прогноза погоды для города"
+error_city = "Город не найден"
+update_error_info = "*отображена информация, полученная ранее"
+error_network = "Отсутвует подключение к интернету"
+
+wind_speed = "米/秒"
+mmHg = "mmHg"
+mm = "毫米"
+
+font_family = "MingLiU"
+especially = true
